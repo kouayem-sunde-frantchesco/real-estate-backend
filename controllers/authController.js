@@ -71,7 +71,7 @@ exports.forgotPassword = async (req, res) => {
       return res.status(404).json({ message: "Aucun utilisateur trouvé avec cet email" });
     }
 
-    // 👉 Ici tu peux générer un token de reset + envoyer un email (à implémenter plus tard)
+    // 👉 Implémenter envoi de mail + lien de reset plus tard
     res.status(200).json({ message: "Si cet email existe, un lien de réinitialisation a été envoyé." });
 
   } catch (error) {
