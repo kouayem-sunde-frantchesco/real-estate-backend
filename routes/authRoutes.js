@@ -15,6 +15,10 @@ router.get('/signin', (req, res) => {
   res.send('Route GET /auth/signin fonctionne, mais utilise POST pour t’authentifier');
 });
 
+router.get('/forgotpassword', (req, res) => {
+  res.send('Route GET forgotpassword fonctionne, mais utilise POST pour t’authentifier');
+});
+
 router.get('/routes/rendezvous', (req, res) => {
   res.send('Route GET rendez vous fonctionne, mais utilise POST pour t’authentifier');
 });
