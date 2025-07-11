@@ -15,15 +15,15 @@ router.get('/signin', (req, res) => {
   res.send('Route GET /auth/signin fonctionne, mais utilise POST pour t’authentifier');
 });
 
-router.get('/rendezvous', (req, res) => {
+router.get('/routes/rendezvous', (req, res) => {
   res.send('Route GET rendez vous fonctionne, mais utilise POST pour t’authentifier');
 });
 
-router.get('/avis', (req, res) => {
+router.get('/routes/avis', (req, res) => {
   res.send('Route GET avis fonctionne, mais utilise POST pour t’authentifier');
 });
 
-router.get('/contratRoutes', (req, res) => {
+router.get('/routes/contratRoutes', (req, res) => {
   res.send('Route GET contratRoutes fonctionne, mais utilise POST pour t’authentifier');
 });
 
