@@ -6,6 +6,12 @@ const multer = require('multer');
 const upload = multer(); // pour parser le multipart/form-data en mémoire
 
 
+// cette route permet de /auth/login en GET est pour vérifier que le routeur fonctionne,
+router.get('/login', (req, res) => {
+  res.send('Route GET /auth/login fonctionne, mais utilise POST pour t’authentifier');
+});
+
+
 // ✅ Route pour s'inscrire
 router.post('/signup', authController.registerUser);
 
