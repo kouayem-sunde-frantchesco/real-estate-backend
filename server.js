@@ -2,6 +2,10 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 
+
+console.log('🔗 DATABASE_URL =', process.env.DATABASE_URL);
+
+
 // 1️⃣ Import du client PostgreSQL
 const { Pool } = require('pg');
 const pool = new Pool({
