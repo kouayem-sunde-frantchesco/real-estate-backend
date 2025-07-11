@@ -12,6 +12,7 @@ const dashboardRoutes = require('./routes/dashboard');
 const authRoutes = require('./routes/authRoutes');
 const avisRoutes = require('./avis.routes');
 const rendezvous = require('./routes/rendezvous');
+const contrat = require('./routes/contratRoutes');
 
 app.use(cors());
 app.use(express.json());
@@ -20,7 +21,14 @@ app.use(dashboardRoutes);
 app.use('/auth', authRoutes);
 app.use('/avis', avisRoutes);
 app.use('/rendezvous', rendezvous);
+app.use('/contratRoutes', contrat);
 
 app.listen(PORT, () => {
   console.log(`✅ Serveur actif sur http://localhost:${PORT}`);
+
+app.get('/', (req, res) => {
+  res.send('✅ API real-estate-backend en ligne avec succès 🚀');
+});
+
+
 });
